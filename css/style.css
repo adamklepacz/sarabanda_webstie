@@ -5,8 +5,26 @@
 *
 */
 
+/* Import Raleway font */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800');
 
 /* MAIN */
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+/* main container */
+.container {
+  max-width: 1670px;
+  height: inherit;
+  /* centerize container */
+  margin: 0 auto; 
+}
+
+
+
