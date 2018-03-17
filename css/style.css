@@ -13,12 +13,14 @@
   --blue: #3885e5;
   --border_gray: #d4d9de;
   --text_gray: #9d9fa2;
+  --text_black: #4f5660;
 }
 
 /* MAIN STYLES */
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 a,
@@ -304,9 +306,6 @@ a:visited
 
 .video__section > * {
   flex: 1;
-
-  /* temporary delete later */
-  border: 1px solid black;
 }
 
 .video__description {
@@ -358,7 +357,120 @@ a:visited
 .video__player {
   height: 550px;
   background: url(../img/video__bg.png);
+  background-position: center;
+  -webkit-box-shadow: inset 0px 0px 0px 2000px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0px 0px 0px 2000px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0px 0px 0px 2000px rgba(0, 0, 0, 0.6);
+  position: relative;
 }
+
+.button__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Job offers */
+.job__offers {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.job__offers__heading {
+  margin: 100px auto;
+  color: var(--text_black);
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: 0.022rem;
+}
+
+.job__card__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 180px;
+}
+
+.job__card {
+  box-sizing: border-box;
+  width: 570px;
+  border: 1px solid var(--border_gray);
+  border-radius: 5px;
+  margin: 0 15px;
+  padding: 35px 50px;
+}
+
+.job__card--dimmed {
+  opacity: 0.3;
+}
+
+.card__header {
+  display: flex;
+  margin-left: -35px;
+  margin-bottom: 15px;
+}
+
+.company__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.company__details > * {
+  flex: 1 1 100%;
+}
+
+.job__title {
+  color: var(--text_black);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: 0.01rem
+}
+
+a.company__name {
+  color: var(--blue);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: 0.01rem;
+}
+
+.company__location {
+  color: var(--text_gray);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: 0.16px;
+  letter-spacing: 0.01rem;
+}
+
+.card__content {
+  text-align: left;
+  color: var(--text_black);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  letter-spacing: 0.011rem;
+}
+
+.card__text {
+  margin-bottom: 15px;
+}
+
+a.card__link {
+  color: var(--blue);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+  letter-spacing: 0.011rem;
+}
+
+
+
 
 
 
