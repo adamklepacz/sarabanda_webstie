@@ -16,8 +16,12 @@
         <a href="#" class="logo">
           <h1 class="logo__text">Sarabanda</h1>
         </a>
-
-        <ul class="menu--wrapper">
+        <button class="menu__mobile" title="open/close menu" id="menu__mobile">
+          <span class="menu__mobile__item"></span>
+          <span class="menu__mobile__item"></span>
+          <span class="menu__mobile__item"></span>
+        </button>
+        <ul class="menu--wrapper" id="menu--wrapper">
           <li class="menu__item">
             <a href="#" class="menu__link">Job offers</a>
           </li>
@@ -50,7 +54,7 @@
           <img src="img/icon__search.png" alt="icon__search" class="icon__form">
         </label>
         <label class="search__input" >
-          <input type="text" class="search__job__location" placeholder="Location">
+          <input type="text" class="search__job__location" placeholder="Location" maxlength="30">
           <img src="img/icon__chevron-down.png" alt="icon__location" class="icon__form icon__location">
         </label>
         <a href="#" class="button__search">
@@ -225,5 +229,7 @@
     <span>Copyright &copy; 2018. All rights reserved.</span>
     <span>Designed by Symu.co | Coded by Adam Klepacz</span>
   </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

@@ -2,7 +2,11 @@
 * 1. MAIN STYLES
 * 2. HEADER SECTION
 * 3. JOB TYPES SECTION
-*
+* 4. VIDEO SECTION
+* 5. JOB OFFERS SECTION
+* 6. TESTIMONIALS
+* 7. NEWSLETTER
+* 8. FOOTER
 */
 
 /* Import Raleway font */
@@ -14,6 +18,13 @@
   --border_gray: #d4d9de;
   --text_gray: #9d9fa2;
   --text_black: #4f5660;
+
+  /* fonts */
+  --super__large: 3rem;
+  --extra__large: 2.25rem;
+  --large: 1.375rem;
+  --normal: 1.125rem;
+  --base: 1rem;
 }
 
 /* MAIN STYLES */
@@ -40,6 +51,11 @@ a:visited
 {
   color: black;
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* main container */
@@ -48,7 +64,6 @@ a:visited
   /* 19.5% === 375px at 1920px resolution */
   padding: 0 19.5%; 
 }
-
 
 /* HEADER SECTION */
 
@@ -75,23 +90,27 @@ a:visited
 
 .nav--wrapper {
   height: 100%;
-  margin: 0 6.25%;
+  /* margin: 0 6.25%; */
+  margin: 0 auto;
+  max-width: 1120px;
   padding: 1.75rem 0;
   display: flex;
   justify-content: space-between;
   align-content: center;
+  position: relative;
 }
 
 .menu--wrapper {
-  font-size: 1.125rem;
+  font-size: var(--normal);
   line-height: 1.875rem;
   font-weight: 200;
   display: flex;
+  transition: .5s;
 }
 
 .menu--wrapper li {
   display: block;
-  padding: 0 0.75rem;
+  padding: 0 1.4rem;
 }
 
 
@@ -109,6 +128,49 @@ a:visited
   border-radius: 5px;
 }
 
+/* Mobile hambureger menu styles  */
+.menu__mobile {
+  display: none;
+  width: 40px;
+  height: 35px;
+  background: transparent;
+  border: none;
+  position: relative;
+}
+
+.menu__mobile__item {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--white);
+  margin: 5px 0;
+  transition: .5s;
+}
+
+.menu__mobile--open:nth-child(1) {
+  background: var(--white);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: rotate(45deg);
+  transition: .2s;
+}
+
+.menu__mobile--open:nth-child(3) {
+  background: var(--white);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: rotate(-45deg);
+  transition: .2s;
+}
+
+.menu__mobile--open:nth-child(2) {
+  display: none;
+}
+
+/* Mobile hambureger menu styles  */
+
 .header__content {
   width: 100%;
   text-align: center;
@@ -124,8 +186,7 @@ a:visited
 
 .header__heading {
   vertical-align: text-bottom;
-  height: 46px;
-  font-size: 3rem;
+  font-size: var(--super__large);
   font-weight: 500;
   line-height: 1.875rem;
   letter-spacing: 0.030rem;
@@ -133,7 +194,7 @@ a:visited
 }
 
 .header__text {
-  font-size: 1.125em;
+  font-size: var(--normal);
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
   margin-bottom: 2.5625rem;
@@ -183,7 +244,7 @@ a:visited
 
 .search__form label > *,
 .button__search--blue {
-  font-size: 1.125rem;
+  font-size: var(--normal);
   line-height: 1.875rem;
 }
 
@@ -206,11 +267,12 @@ a:visited
 }
 
 .search__input input {
+  width: 80%;
   border: none;
   outline: none;
   margin-left: 1.25rem;
   color: var(--text_gray);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -242,7 +304,7 @@ a:visited
 
 .learn__more {
   color: var(--white);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
 }
@@ -274,7 +336,7 @@ a:visited
 .job__categories li a,
 .button__categories {
   color: var(--text_gray);
-  font-size: 18px;
+  font-size: var(--normal);
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
 }
@@ -299,7 +361,7 @@ a:visited
 
 .job__heading {
   color: var(--text_gray);
-  font-size: 2.25rem;
+  font-size: var(--extra__large);
   font-weight: 400;
   line-height: 1.875rem;
   margin-bottom: 2.625rem;
@@ -307,7 +369,7 @@ a:visited
 
 .job__text {
   color: var(--text_gray);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -330,7 +392,7 @@ a:visited
 }
 
 .video__content {
-  width: 500px; 
+  max-width: 500px; 
   position: absolute;
   top: 50%;
   right: 5%;
@@ -339,7 +401,7 @@ a:visited
 
 .video__heading {
   color: var(--white);
-  font-size: 2.25rem;
+  font-size: var(--extra__large);
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: 0.022rem;
@@ -348,7 +410,7 @@ a:visited
 
 .video__text {
   color: var(--white);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -362,7 +424,7 @@ a:visited
   border-radius: 5px;
   background: transparent;
   color: var(--white);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -394,7 +456,7 @@ a:visited
 .job__offers__heading {
   margin: 100px auto;
   color: var(--text_black);
-  font-size: 2.25rem;
+  font-size: var(--extra__large);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.022rem;
@@ -451,7 +513,7 @@ a:visited
 
 a.company__name {
   color: var(--blue);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.01rem;
@@ -469,7 +531,7 @@ a.company__name {
 .card__content {
   text-align: left;
   color: var(--text_black);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -481,7 +543,7 @@ a.company__name {
 
 a.card__link {
   color: var(--blue);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 500;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -492,6 +554,8 @@ a.card__link {
 
 .testimonials__wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background: #000;
   padding-left: 90px;
   padding-right: 90px;
@@ -504,13 +568,13 @@ a.card__link {
 
 .testimonial__content {
   color: #fff;
-  margin: 155px 0 0 -25px;
+  margin-left: -25px;
 }
 
 .testimonial__text {
   width: 650px;
   color: #ffffff;
-  font-size: 1.375rem;
+  font-size: var(--large);
   font-weight: 400;
   line-height: 2.25rem;
   letter-spacing: 0.014rem;
@@ -534,7 +598,7 @@ a.card__link {
 
 .person__name {
   color: var(--white);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 2.375rem;
   letter-spacing: 0.011rem;
@@ -542,7 +606,7 @@ a.card__link {
 
 .person__position {
   color: #c5c5c5;
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 2.375rem;
   letter-spacing: 0.011rem;
@@ -559,7 +623,7 @@ a.card__link {
 
 .newsletter__heading {
   color: var(--text_black);
-  font-size: 2.25rem;
+  font-size: var(--extra__large);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.022rem;
@@ -568,7 +632,7 @@ a.card__link {
 
 .newsletter__text {
   color: var(--text_black);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -592,9 +656,9 @@ a.card__link {
   margin-left: 5px;
   padding: 0 0 0 10px;
   border: transparent;
-
+  outline: none;
   color: var(--text_gray);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -602,7 +666,7 @@ a.card__link {
 
 .newsletter__input::-webkit-input-placeholder {
   color: var(--text_gray);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -610,7 +674,7 @@ a.card__link {
 
 .newsletter__input::-moz-placeholder {
   color: var(--text_gray);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -623,7 +687,7 @@ a.card__link {
   border-radius: 5px;
   background-color: #3885e5;
   color: var(--white);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.875rem;
   letter-spacing: 0.011rem;
@@ -638,23 +702,272 @@ a.card__link {
   border-top: 1px solid var(--border_gray);
 
   color: var(--text_black);
-  font-size: 1.125rem;
+  font-size: var(--normal);
   font-weight: 400;
   line-height: 1.75rem;
   letter-spacing: 0.068rem;
 }
 
+/* RWD */
+
+/* Super large displays */
+@media (min-width: 1920px) {
+  .main__header {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1530px) {
+  .testimonial__content {
+    margin-left: -200px;
+  }
+
+  .testimonial__footer {
+    margin-left: -8%;
+  }
+}
+
+@media (max-width: 1360px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+ .testimonial__content {
+   margin-left: -220px;
+ }
+}
+
+@media (max-width: 1280px) {
+  .video__section {
+    flex-direction: column;
+  }
+
+  .video__description {
+    text-align: center;
+  }
+
+  .video__content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    wid
+  }
+
+  .video__player {
+    background-size: cover;
+  }
+
+  .job__card__wrapper {
+    overflow: hidden;
+  }
+
+  .job__card {
+    min-width: 390px;
+  }
+
+  .nav--wrapper {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .testimonials__wrapper {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+  }
+
+  .testimonial__content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* for tablets and under */
+@media (max-width: 1000px) {
+  .menu__mobile {
+    display: block;
+    z-index: 999;
+  }
+
+  .logo {
+    z-index: 999;
+  }
+
+  .nav--wrapper {
+    position: relative;
+  }
+
+  .main__header {
+    overflow: hidden;
+  }
+
+  .menu--wrapper {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    background: var(--blue);
+    z-index: -9;
+    transition: .5s;
+  }
+
+  .menu--wrapper li:nth-child(3)::after {
+    display: none;
+  }
+
+  .menu--wrapper--open {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 1;
+  }
+
+  .job__text {
+    padding: 0 3rem;
+  }
+
+  .newsletter__text {
+    padding: 0 3rem;
+  }
+}
 
 
+@media (max-width: 850px) {
+  :root {
+    --super__large: 2.5rem;
+    --extra__large: 1.875rem;
+    --large: 1.175rem;
+    --normal: 1rem;
+  }
+
+  .search__form {
+    flex-direction: column;
+    height: 190px;
+    width: 500px;
+  }
+
+  .search__form label {
+    border-right: none;
+  }
+
+  .search__form a {
+    flex: 2;
+  }
+
+  .search__form label:nth-child(2) {
+    flex: 2;
+  }
+
+  .search__input {
+    border-bottom: 1px solid var(--border_gray);
+  }
+
+  .header__content {
+    padding: 0 20px;
+  }
+
+  .header__heading {
+    line-height: 3rem;
+  }
+
+  .testimonial__photo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile devives */
+@media (max-width: 425px) {
+  .search__form {
+    width: auto;
+  }
+
+  .job__categories {
+    flex-direction: column;
+  }
+
+  .job__categories > * {
+    margin-bottom: 10px;
+  }
+  
+  /* Remove last dot */
+  .job__categories > *:nth-child(12){
+    display: none;
+  }
+
+  .job__heading {
+    padding: 0 2rem;
+  }
+
+  .video__content {
+    width: 100%;
+    padding: 0 3rem;
+  }
+
+  .testimonial__photo {
+    display: none;
+  }
+
+  .testimonial__text {
+    width: auto;
+  }
+
+  .testimonials__wrapper {
+    padding: 20px 20px;
+  }
+
+  .testimonial__content {
+    position: unset;
+    top: unset;
+    transform: unset;
+  }
+
+  .newsletter {
+    margin-bottom: 20px;
+  }
+
+  .newsletter__form {
+    width: 250px;
+    height: 90px;
+    flex-direction: column;
+  }
+
+  .newsletter__form > * {
+    flex: 1;
+  }
+
+  .newsletter__text {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    height: 135px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__heading {
+    font-size: var(--extra__large);
+  }
+
+  .video__description {
+    height: 580px;
+  }
+
+  .job__card__wrapper {
+    margin-bottom: 100px;
+  }
+}
 
 
-
-
-
-
-
-
-
+/* 
 @media (max-width: 1280px) {
   .container {
     padding: 0 10%;
@@ -670,4 +983,8 @@ a.card__link {
   .testimonial__content {
     margin-left: -150px;
   }
-}
+
+  .menu--wrapper li {
+    padding: 0 0.75rem;
+  }
+} */
