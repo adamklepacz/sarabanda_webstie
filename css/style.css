@@ -20,11 +20,11 @@
   --text_black: #4f5660;
 
   /* fonts */
-  --super__large: 3rem;
-  --extra__large: 2.25rem;
-  --large: 1.375rem;
-  --normal: 1.125rem;
-  --base: 1rem;
+  --super__large: 48px;
+  --extra__large: 36px;
+  --large: 22px;
+  --normal: 18px;
+  --base: 16px;
 }
 
 /* MAIN STYLES */
@@ -78,10 +78,10 @@ button {
 
 .logo__text {
   color: var(--white);
-  font-size: 1.8125rem;
+  font-size: 29px;
   font-weight: 500;
-  line-height: 1.875rem;
-  letter-spacing: 0.018rem;
+  line-height: 30px;
+  letter-spacing: 0.29px;
 }
 
 .nav a {
@@ -93,7 +93,7 @@ button {
   /* margin: 0 6.25%; */
   margin: 0 auto;
   max-width: 1120px;
-  padding: 1.75rem 0;
+  padding: 28px 0;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -102,7 +102,7 @@ button {
 
 .menu--wrapper {
   font-size: var(--normal);
-  line-height: 1.875rem;
+  line-height: 30px;
   font-weight: 200;
   display: flex;
   transition: .5s;
@@ -110,15 +110,15 @@ button {
 
 .menu--wrapper li {
   display: block;
-  padding: 0 1.4rem;
+  padding: 0 22px
 }
 
 
 .menu--wrapper li:nth-child(3)::after {
   display: block;
   content: '';
-  height: 1.75rem;
-  margin-left: 1.25rem;
+  height: 28px;
+  margin-left: 20px;
   float: right;
   border-right: 1px solid var(--white);
 }
@@ -188,16 +188,16 @@ button {
   vertical-align: text-bottom;
   font-size: var(--super__large);
   font-weight: 500;
-  line-height: 1.875rem;
-  letter-spacing: 0.030rem;
-  margin-bottom: 1.1875rem;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+  margin-bottom: 19px;
 }
 
 .header__text {
   font-size: var(--normal);
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
-  margin-bottom: 2.5625rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
+  margin-bottom: 41px;
 }
 
 .learn__more {
@@ -245,7 +245,7 @@ button {
 .search__form label > *,
 .button__search--blue {
   font-size: var(--normal);
-  line-height: 1.875rem;
+  line-height: 30px;
 }
 
 .search__input {
@@ -270,12 +270,12 @@ button {
   width: 80%;
   border: none;
   outline: none;
-  margin-left: 1.25rem;
+  margin-left: 20px;
   color: var(--text_gray);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 .search__input input::-webkit-input-placeholder {
@@ -305,12 +305,12 @@ button {
 .learn__more {
   color: var(--white);
   font-size: var(--normal);
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 .learn__more p {
-  margin-bottom: 1.188em;
+  margin-bottom: 19px;
 }
 
 /* JOB TYPES SECTION */
@@ -337,8 +337,8 @@ button {
 .button__categories {
   color: var(--text_gray);
   font-size: var(--normal);
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 .button__categories {
@@ -355,7 +355,7 @@ button {
 
 .job__content {
   text-align: center;
-  margin: 6.25rem auto 6.5625em auto;
+  margin: 100px auto 100px auto;
   max-width: 950px;
 }
 
@@ -363,16 +363,16 @@ button {
   color: var(--text_gray);
   font-size: var(--extra__large);
   font-weight: 400;
-  line-height: 1.875rem;
-  margin-bottom: 2.625rem;
+  line-height: 30px;
+  margin-bottom: 42px;
 }
 
 .job__text {
   color: var(--text_gray);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 /* Video Section */
@@ -403,8 +403,8 @@ button {
   color: var(--white);
   font-size: var(--extra__large);
   font-weight: 400;
-  line-height: 3rem;
-  letter-spacing: 0.022rem;
+  line-height: 48px;
+  letter-spacing: 0.35px;
   margin-bottom: 42px;
 }
 
@@ -412,9 +412,9 @@ button {
   color: var(--white);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
-  margin-bottom: 5rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
+  margin-bottom: 80px;
 }
 
 .button__video {
@@ -426,8 +426,8 @@ button {
   color: var(--white);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 .video__player {
@@ -458,15 +458,15 @@ button {
   color: var(--text_black);
   font-size: var(--extra__large);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.022rem;
+  line-height: 30px;
+  letter-spacing: 0.35px;
 }
 
 .job__card__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 180px;
+  margin-bottom: 100px;
 }
 
 .job__card {
@@ -479,6 +479,10 @@ button {
 
 .job__card--dimmed {
   opacity: 0.3;
+}
+
+.swipe__tip {
+  display: none;
 }
 
 .card__header {
@@ -500,10 +504,10 @@ button {
 
 .job__title {
   color: var(--text_black);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.01rem
+  line-height: 30px;
+  letter-spacing: 0.016px
 }
 
 .company__brand {
@@ -515,17 +519,17 @@ a.company__name {
   color: var(--blue);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.01rem;
+  line-height: 30px;
+  letter-spacing: 0.016px;
 }
 
 .company__location {
   color: var(--text_gray);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.875rem;
+  line-height: 30px;
   letter-spacing: 0.16px;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.016px;
 }
 
 .card__content {
@@ -533,8 +537,8 @@ a.company__name {
   color: var(--text_black);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 .card__text {
@@ -545,8 +549,8 @@ a.card__link {
   color: var(--blue);
   font-size: var(--normal);
   font-weight: 500;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 
@@ -576,8 +580,8 @@ a.card__link {
   color: #ffffff;
   font-size: var(--large);
   font-weight: 400;
-  line-height: 2.25rem;
-  letter-spacing: 0.014rem;
+  line-height: 36px;
+  letter-spacing: 0.22px;
 }
 
 .testimonial__footer {
@@ -600,16 +604,16 @@ a.card__link {
   color: var(--white);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 2.375rem;
-  letter-spacing: 0.011rem;
+  line-height: 38px;
+  letter-spacing: 0.0116px;
 }
 
 .person__position {
   color: #c5c5c5;
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 2.375rem;
-  letter-spacing: 0.011rem;
+  line-height: 38px;
+  letter-spacing: 0.0116px;
 }
 
 /* Newsletter */
@@ -625,8 +629,8 @@ a.card__link {
   color: var(--text_black);
   font-size: var(--extra__large);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.022rem;
+  line-height: 30px;
+  letter-spacing: 0.35px;
   margin-bottom: 50px;
 }
 
@@ -634,15 +638,13 @@ a.card__link {
   color: var(--text_black);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
   margin-bottom: 85px;
 }
 
 .newsletter__form {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto;
   width: 520px;
   height: 44px;
   border-radius: 5px;
@@ -660,24 +662,24 @@ a.card__link {
   color: var(--text_gray);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 .newsletter__input::-webkit-input-placeholder {
   color: var(--text_gray);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 .newsletter__input::-moz-placeholder {
   color: var(--text_gray);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 .newsletter__submit {
@@ -689,8 +691,8 @@ a.card__link {
   color: var(--white);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.875rem;
-  letter-spacing: 0.011rem;
+  line-height: 30px;
+  letter-spacing: 0.0116px;
 }
 
 /* Footer */
@@ -704,8 +706,8 @@ a.card__link {
   color: var(--text_black);
   font-size: var(--normal);
   font-weight: 400;
-  line-height: 1.75rem;
-  letter-spacing: 0.068rem;
+  line-height: 28px;
+  letter-spacing: 1.08px;
 }
 
 /* RWD */
@@ -750,7 +752,6 @@ a.card__link {
   .video__content {
     left: 50%;
     transform: translate(-50%, -50%);
-    wid
   }
 
   .video__player {
@@ -766,7 +767,7 @@ a.card__link {
   }
 
   .nav--wrapper {
-    padding: 1.75rem 1.5rem;
+    padding: 28px 1.80px;
   }
 
   .testimonials__wrapper {
@@ -830,21 +831,18 @@ a.card__link {
   }
 
   .job__text {
-    padding: 0 3rem;
+    padding: 0 48px;
   }
 
-  .newsletter__text {
-    padding: 0 3rem;
-  }
 }
 
 
 @media (max-width: 850px) {
   :root {
-    --super__large: 2.5rem;
-    --extra__large: 1.875rem;
-    --large: 1.175rem;
-    --normal: 1rem;
+    --super__large: 32px;
+    --extra__large: 30px;
+    --large: 18px;
+    --normal: 16px;
   }
 
   .search__form {
@@ -874,7 +872,7 @@ a.card__link {
   }
 
   .header__heading {
-    line-height: 3rem;
+    line-height: 48px;
   }
 
   .testimonial__photo {
@@ -885,8 +883,20 @@ a.card__link {
 
 /* Mobile devives */
 @media (max-width: 425px) {
+  .nav--wrapper {
+    padding: 28px 20px;
+  }
+
+  .swipe__tip {
+    display: inline;
+  }
+
   .search__form {
     width: auto;
+  }
+
+  .job__content {
+    margin: 50px auto 50px auto;
   }
 
   .job__categories {
@@ -903,12 +913,20 @@ a.card__link {
   }
 
   .job__heading {
-    padding: 0 2rem;
+    padding: 0 32px;
+  }
+
+  .job__offers__heading {
+    margin: 50px auto;
+  }
+
+  .job__card__wrapper {
+    margin-bottom: 50px;
   }
 
   .video__content {
     width: 100%;
-    padding: 0 3rem;
+    padding: 0 48px;
   }
 
   .testimonial__photo {
@@ -930,7 +948,8 @@ a.card__link {
   }
 
   .newsletter {
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
+    padding: 0 48px;
   }
 
   .newsletter__form {
@@ -950,6 +969,14 @@ a.card__link {
   .footer {
     height: 135px;
   }
+
+}
+
+@media (max-width: 375px) {
+  .job__card {
+    min-width: 310px;
+    padding: 35px 35px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -961,9 +988,9 @@ a.card__link {
     height: 580px;
   }
 
-  .job__card__wrapper {
-    margin-bottom: 100px;
-  }
+  
+
+  
 }
 
 
@@ -985,6 +1012,6 @@ a.card__link {
   }
 
   .menu--wrapper li {
-    padding: 0 0.75rem;
+    padding: 0 0.780px;
   }
 } */
