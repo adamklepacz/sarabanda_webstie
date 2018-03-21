@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sarabanda - Website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
-  
 </head>
+
 <body>
   <header class="main__header">
     <nav class="nav">
@@ -23,13 +25,13 @@
         </button>
         <ul class="menu--wrapper" id="menu--wrapper">
           <li class="menu__item">
-            <a href="#" class="menu__link">Job offers</a>
+            <a href="#change__job" class="menu__link">Change Job</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Curriculum Vitae</a>
+            <a href="#video__section" class="menu__link">Love your job</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Post a job</a>
+            <a href="#newsletter" class="menu__link">Newsletter</a>
           </li>
           <li class="menu__item">
             <a href="#" class="menu__link">Login</a>
@@ -40,7 +42,7 @@
         </ul>
       </div>
     </nav>
-    
+
     <div class="header__content">
       <h2 class="header__heading">
         Don't get stuck in a job you hate!
@@ -53,14 +55,14 @@
           <input type="text" class="search__job__title" placeholder="Search...">
           <img src="img/icon__search.png" alt="icon__search" class="icon__form">
         </label>
-        <label class="search__input" >
+        <label class="search__input">
           <input type="text" class="search__job__location" placeholder="Location" maxlength="30">
           <img src="img/icon__chevron-down.png" alt="icon__location" class="icon__form icon__location">
         </label>
         <a href="#" class="button__search">
           <button class="button__search--blue">
             Find a job
-          </button>  
+          </button>
         </a>
       </form>
     </div>
@@ -69,15 +71,19 @@
       <p>Learn more</p>
       <img src="img/icon__mouse.png" alt="icon__mouse" class="icon__mouse">
     </div>
-  
+
   </header>
   <main>
-    <section class="job__types">
+    <section class="job__types" id="change__job">
       <div class="job__categories__wrapper ">
         <ul class="job__categories container">
-          <li class="job__item"><a href="#" class="job__item__link">Banking</a></li>
+          <li class="job__item">
+            <a href="#" class="job__item__link">Banking</a>
+          </li>
           <span class="job__dot"></span>
-          <li class="job__item"><a href="#" class="job__item__link">Marketing/PR</a></li>
+          <li class="job__item">
+            <a href="#" class="job__item__link">Marketing/PR</a>
+          </li>
           <span class="job__dot"></span>
           <li class="job__item">
             <a href="#" class="job__item__link">Education</a>
@@ -101,26 +107,28 @@
               </button>
             </a>
           </li>
-        </ul> 
+        </ul>
       </div>
       <div class="job__content">
         <h2 class="job__heading">Why you need to change a job now?</h2>
         <p class="job__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
-          sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+          unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore veritatis.
         </p>
       </div>
     </section>
 
-    <section class="video__section">
+    <section class="video__section" id="video__section">
       <div class="video__description">
         <div class="video__content">
           <h2 class="video__heading">How important is to love what you do?</h2>
           <p class="video__text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
           </p>
           <a href="">
             <button class="button__video">Learn more</button>
@@ -135,9 +143,9 @@
         </a>
       </div>
     </section>
-    <section class="job__offers">
+    <section class="job__offers" id="job__offers">
       <h2 class="job__offers__heading">Featured job offers</h2>
-      <div class="job__card__wrapper">
+      <div class="job__card__wrapper" id="job__card__wrapper">
         <div class="job__card job__card--dimmed">
           <header class="card__header">
             <img src="img/icon__tinder.png" alt="company__logo" class="company__brand">
@@ -155,7 +163,24 @@
             <a href="" class="card__link">Read more</a>
           </div>
         </div>
-        <div class="job__card">
+        <div class="job__card job__card--dimmed">
+          <header class="card__header">
+            <img src="img/icon__tinder.png" alt="company__logo" class="company__brand">
+            <div class="company__details">
+              <h3 class="job__title">Senior Product Designer</h3>
+              <a href="#" class="company__name">Tinder</a>
+              <span class="company__location">California, USA</span>
+            </div>
+          </header>
+          <div class="card__content">
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud.
+            </p>
+            <a href="" class="card__link">Read more</a>
+          </div>
+        </div>
+        <div class="job__card job__card--dimmed">
           <header class="card__header">
             <img src="img/icon__tinder.png" alt="company__logo" class="company__brand">
             <div class="company__details">
@@ -190,7 +215,7 @@
           </div>
         </div>
       </div>
-      <span class="swipe__tip">Swipe left</span>
+      <span class="swipe__tip">&larr;</span>
     </section>
 
     <section class="testimonials">
@@ -199,8 +224,8 @@
         <article class="testimonial__content">
           <p class="testimonial__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Cillum dolore
-            eu fugiat nulla pariatur.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Cillum
+            dolore eu fugiat nulla pariatur.
           </p>
           <footer class="testimonial__footer">
             <img src="img/s-symu.png" alt="" class="testimonial__company">
@@ -213,11 +238,11 @@
       </div>
     </section>
 
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
       <h2 class="newsletter__heading">Subscribe our newsletter</h2>
       <p class="newsletter__text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       </p>
       <form class="newsletter__form">
         <input type="email" placeholder="Your email adress..." class="newsletter__input">
@@ -231,6 +256,9 @@
     <span>Designed by Symu.co | Coded by Adam Klepacz</span>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/app.js"></script>
 </body>
+
 </html>
